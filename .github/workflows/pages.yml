@@ -29,7 +29,7 @@ jobs:
         run: |
           sha256sum --check --strict SHA256SUMS
           mkdir -p _site
-          cp index.html lesson-one-subtitles.html lesson-two.html lesson-two-subtitles.html version.json SHA256SUMS THIRD-PARTY-NOTICES.md .nojekyll _site/
+          cp index.html lesson-two.html version.json SHA256SUMS THIRD-PARTY-NOTICES.md .nojekyll _site/
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload current demo
