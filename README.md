@@ -1,25 +1,16 @@
-# AI 分享会 · 第一讲开场演示
+# AI 分享会 · 当前公开演示
 
-在线展示：[第一讲开场 1—13](https://luiszengii.github.io/ai-sharing-course-demo/)
+| 演示 | 在线入口 |
+| --- | --- |
+| 第一讲普通版 | [打开](https://luiszengii.github.io/ai-sharing-course-demo/) |
+| 第一讲字幕版 | [打开](https://luiszengii.github.io/ai-sharing-course-demo/lesson-one-subtitles.html) |
+| 第二讲普通版 | [打开](https://luiszengii.github.io/ai-sharing-course-demo/lesson-two.html) |
+| 第二讲字幕版 | [打开](https://luiszengii.github.io/ai-sharing-course-demo/lesson-two-subtitles.html) |
 
-当前固定为 **v0.1**：原来的柔和起步、按内容配置的分段时长与渐缓收尾。
+滚轮或触控板推进、回退，左右键切换停点。左下角小入口展开进度条；字幕版另有 CC 开关。每份 HTML 自包含，可下载离线使用。
 
-这个仓库仅保存发布用的自包含 HTML 与部署配置。`index.html` 是 v0.1 固定离线快照的原样副本，图片、样式和脚本全部内嵌，没有重新编译或修改动画。
+本仓库只存当前演示成品和部署配置；历史由 Git 管理，不另存版本文件。源码采用 course/、subtitles/、docs/、demos/、skills/ 结构，位于独立的私有源码仓库。
 
-## 操作
+version.json 记录源码提交与各入口字节数、SHA-256；GitHub Actions 在发布前核对 SHA256SUMS。设计候选和审片工具不在本次公开范围。工程检查不代表讲者已完成现场设备或视觉验收。
 
-- 滚轮 / 触控板：连续推进与回退。
-- 左右方向键：前后切换关键帧。
-- Home / End：回到开头 / 到达结尾。
-
-## 发布与版本校验
-
-GitHub Actions 在发布前校验 `index.html` 的 SHA-256；不符合固定版本即停止发布。`version.json` 记录当前版本及其校验值。
-
-v0.1 SHA-256：
-
-```text
-3bb96eb0955604ad8cd75790398f9a159933d57d7260585bdafe41111d69e88e
-```
-
-第三方图片与组件保留原有权利、署名和许可，来源记录保留在 HTML 的 `asset-credits` 元数据中。
+第三方来源、作者和许可保留在 HTML 的 asset-credits 元数据及 THIRD-PARTY-NOTICES.md 中。素材保留各自权利，本仓库不作为通用素材包授权。

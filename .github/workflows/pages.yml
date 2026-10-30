@@ -1,4 +1,4 @@
-name: Deploy v0.1 demo
+name: Deploy current course demo
 
 on:
   push:
@@ -21,18 +21,18 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout fixed demo
+      - name: Checkout current demo
         uses: actions/checkout@v6
         with:
           persist-credentials: false
-      - name: Verify unchanged v0.1 and prepare site
+      - name: Verify current delivery and prepare site
         run: |
-          echo '3bb96eb0955604ad8cd75790398f9a159933d57d7260585bdafe41111d69e88e  index.html' | sha256sum --check --strict
+          sha256sum --check --strict SHA256SUMS
           mkdir -p _site
-          cp index.html version.json .nojekyll _site/
+          cp index.html lesson-one-subtitles.html lesson-two.html lesson-two-subtitles.html version.json SHA256SUMS THIRD-PARTY-NOTICES.md .nojekyll _site/
       - name: Configure Pages
         uses: actions/configure-pages@v5
-      - name: Upload fixed demo
+      - name: Upload current demo
         uses: actions/upload-pages-artifact@v4
         with:
           path: _site

@@ -1,6 +1,33 @@
 {
-  "version": "v0.1",
-  "sourceTag": "intro-v0.1-baseline",
-  "sha256": "3bb96eb0955604ad8cd75790398f9a159933d57d7260585bdafe41111d69e88e",
-  "bytes": 12703835
+  "version": "current",
+  "sourceCommit": "05177cc09efab0d67dd9c7239824be2833f0529c",
+  "sourceBranch": "chapter/neuron-14-27",
+  "publishedOn": "2026-10-30",
+  "kind": "course-preview",
+  "files": [
+    {
+      "title": "第一讲普通版",
+      "file": "index.html",
+      "bytes": 17470227,
+      "sha256": "8ab78f45e82ea5a4c236ac1a27ff082934494b5143c75341ab4a843581a93a9b"
+    },
+    {
+      "title": "第一讲字幕版",
+      "file": "lesson-one-subtitles.html",
+      "bytes": 17552277,
+      "sha256": "97e2866116fe584234bb2b1089130ef532632504dae1ea7e02ccf876082bc60f"
+    },
+    {
+      "title": "第二讲普通版",
+      "file": "lesson-two.html",
+      "bytes": 4531714,
+      "sha256": "fe7f4b553d6c8316b62e793cf4e4a1e60674e8e62ec47a41a370494a715bff5c"
+    },
+    {
+      "title": "第二讲字幕版",
+      "file": "lesson-two-subtitles.html",
+      "bytes": 4620156,
+      "sha256": "c8cf5c7c0d059329b7f45a49944b40fa39cc4b4a5bbdefa6774d6e18d8aea4c4"
+    }
+  ]
 }
